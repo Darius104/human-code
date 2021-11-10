@@ -6,12 +6,12 @@
 
         ?se semaforo = verde and (destra = libero && sinistra = libero){
             -passa
-        }altrimenti{
+        }
+        altrimenti{
             -stai
+            }
         }
-        }
-    }
-    altrimenti {
+    altrimenti{
         ?se semaforo non c'è{
             ?se destra and sinistra = libero
                 -passa
@@ -19,7 +19,7 @@
                 -stai
             } 
     }
-}altriment{
+}
+altrimenti{
     prosegui fino a trovare le strisce
 }
-
