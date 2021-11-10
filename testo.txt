@@ -1,0 +1,15 @@
+1- arrivo di fronte alla strada
+
+? se la strada ha le strisce{
+
+    ?se la strada ha il semaforo{
+
+        ?se semaforo = verde and (destra = libero && sinistra = libero){
+            -passa
+        }altrimenti{
+            -stai
+        }
+    }
+}altriment{
+    prosegui fino a trovare le strisce
+}
